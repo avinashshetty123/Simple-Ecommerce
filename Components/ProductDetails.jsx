@@ -20,7 +20,7 @@ export default function ProductDetails() {
   
   useEffect(() => {
     // Fetch the products data
-    fetch("../AllProducts.json")
+    fetch("https://fakestores.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
         setData(data); 

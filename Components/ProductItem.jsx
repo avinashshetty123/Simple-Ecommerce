@@ -14,7 +14,7 @@ export default function ProductItem() {
   const navigate = useNavigate();
     const [data, setdata] = useState([]);
     useEffect(() => {
-      fetch("../AllProducts.json").then((response) => {
+      fetch("https://fakestores.onrender.com/api/products").then((response) => {
         response.json().then((data) => setdata(data));
       });
     }, []);
