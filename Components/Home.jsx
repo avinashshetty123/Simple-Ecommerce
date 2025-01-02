@@ -79,7 +79,7 @@ export default function Home() {
           <h1 className="z-10 text-white relative top-[10vh] left-[8vw] md:top-[40vh] md:left-[10vw] md:text-6xl font-extrabold">{header.text}</h1>
           <p className="z-10 text-white relative top-[12vh] left-[8vw] md:top-[42vh] md:left-[10vw] md:text-3xl "> {header.para}</p>
           <Link to={header.Link}><button className="z-10 text-white relative top-[14vh] left-[8vw] md:top-[46vh] md:left-[10vw] md:text-2xl text-sm p-1 border-2 border-orange-500 hover:border-red-500 bg-black md:p-4 rounded-3xl hover:bg-orange-500">{header.But}</button></Link>
-          <img src={header.image.default} alt={`Slide ${index + 1}`} className="w-full max-h-[100vh] lg:max-w-[100vw] -mt-[10vh] sm:-mt-[30vh] md:-mt-40 -z-40 p-4 object-center ml-7 mr-10" />
+          <img src={header.image.default} alt={`Slide ${index + 1}`} className="w-full max-h-[100vh] -mt-[10vh] sm:-mt-[30vh] md:-mt-40 -z-40 p-4 object-center  " />
         </SwiperSlide>
       ))}
       </div>
