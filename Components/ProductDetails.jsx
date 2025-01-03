@@ -10,7 +10,7 @@ export default function ProductDetails() {
   
 
   const handleMultipleAddToCart = (product, quantity) => {
-    dispatch(addmutipletocart({ productId: product.id, Product: product, quantity }));
+    dispatch(addmutipletocart({ productId: product.id, Product: product, quantity: parseInt(quantity) }));
   };
 
   const { id } = useParams(); 

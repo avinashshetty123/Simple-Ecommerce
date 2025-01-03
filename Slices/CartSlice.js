@@ -12,6 +12,7 @@ const cartSlice = createSlice({
         state.items[productId].count += 1;
       } else {
         state.items[productId] = { count: 1, Product };
+
       }
     },
     removefromcart: (state, action) => {
